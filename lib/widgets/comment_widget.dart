@@ -17,7 +17,7 @@ class CommentWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(bottom: 26.h),
+      padding: EdgeInsets.only(bottom: isReplying ? 10.h : 26.h),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -36,14 +36,14 @@ class CommentWidget extends StatelessWidget {
                 children: [
                   Text(
                     comment.name,
-                    style: TextStyle(fontSize: 13, fontWeight: FontWeight.w400),
+                    style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w400),
                   ),
                   SizedBox(
                     width: 10.w,
                   ),
                   Text(
                     comment.userName,
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontSize: 13,
                         fontWeight: FontWeight.w400,
                         color: Color(0xff5C8DFF)),
@@ -53,7 +53,7 @@ class CommentWidget extends StatelessWidget {
                   ),
                   Text(
                     comment.time,
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontSize: 13,
                         fontWeight: FontWeight.w400,
                         color: Color(0xffC4C4C4)),
@@ -67,16 +67,16 @@ class CommentWidget extends StatelessWidget {
                   width: 307.w,
                   child: Text(
                     comment.body,
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontSize: 13,
                         fontWeight: FontWeight.w400,
                         color: Color(0xff767676)),
                   )),
-              SizedBox(
+              !isReplying ? SizedBox(
                 height: 12.h,
-              ),
+              ) : const SizedBox.shrink(),
               isReplying
-                  ? SizedBox.shrink()
+                  ? const SizedBox.shrink()
                   : SizedBox(
                       width: 125.w,
                       child: Row(
@@ -104,12 +104,12 @@ class CommentWidget extends StatelessWidget {
                                       style: TextStyle(
                                         fontSize: 13.sp,
                                         fontWeight: FontWeight.w300,
-                                        color: Color(
+                                        color: const Color(
                                           0xffC4C4C4,
                                         ),
                                       ),
                                     )
-                                  : SizedBox.shrink(),
+                                  : const SizedBox.shrink(),
                             ],
                           ),
                           Row(
@@ -125,7 +125,7 @@ class CommentWidget extends StatelessWidget {
                                   style: TextStyle(
                                     fontSize: 13.sp,
                                     fontWeight: FontWeight.w300,
-                                    color: Color(
+                                    color: const Color(
                                       0xffC4C4C4,
                                     ),
                                   ))
@@ -139,27 +139,27 @@ class CommentWidget extends StatelessWidget {
                       ),
                     ),
               isReplying
-                  ? SizedBox.shrink()
+                  ? const SizedBox.shrink()
                   : comment.comments != 0
                       ? Container(
                           margin: EdgeInsets.only(top: 10.h),
                           padding: EdgeInsets.symmetric(
                               horizontal: 6.w, vertical: 3.h),
                           decoration: BoxDecoration(
-                            color: Color(0xffFEF1F1),
+                            color: const Color(0xffFEF1F1),
                             borderRadius: BorderRadius.circular(3.r),
                           ),
                           child: Row(
                             children: [
                               Text('View ${comment.comments} replies'),
-                              Icon(
+                              const Icon(
                                 Icons.arrow_forward_ios,
                                 size: 12,
                               ),
                             ],
                           ),
                         )
-                      : SizedBox.shrink(),
+                      : const SizedBox.shrink(),
             ],
           )
         ],

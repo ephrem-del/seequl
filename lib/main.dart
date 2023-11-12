@@ -16,7 +16,7 @@ class App extends StatelessWidget {
       useInheritedMediaQuery: true,
       designSize: const Size(414.0, 896.0),
       builder: (BuildContext context, Widget? child) {
-        return MaterialApp(
+        return const MaterialApp(
           debugShowCheckedModeBanner: false,
           title: "Test",
           home: HomeScreen(),
