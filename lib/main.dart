@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:test_ephrem/screens/home_screen.dart';
+import 'package:seequl/screens/home_screen.dart';
 
 void main() {
   runApp(const App());

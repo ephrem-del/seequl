@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:test_ephrem/screens/apps_screen.dart';
-import 'package:test_ephrem/screens/organize_screen.dart';
-import 'package:test_ephrem/screens/profile_screen.dart';
-import 'package:test_ephrem/screens/qucon_screen.dart';
-import 'package:test_ephrem/screens/zaady_screen.dart';
+import 'package:seequl/screens/apps_screen.dart';
+import 'package:seequl/screens/organize_screen.dart';
+import 'package:seequl/screens/profile_screen.dart';
+import 'package:seequl/screens/qucon_screen.dart';
+import 'package:seequl/screens/zaady_screen.dart';
 
 import '../config/custom_icons_icons.dart';
 import '../widgets/app_bar.dart';

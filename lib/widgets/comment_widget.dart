@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:test_ephrem/config/path.dart';
-import 'package:test_ephrem/screens/comment_reply_screen.dart';
+import 'package:seequl/config/path.dart';
+import 'package:seequl/screens/comment_reply_screen.dart';
 
 import '../models/comment.dart';
 

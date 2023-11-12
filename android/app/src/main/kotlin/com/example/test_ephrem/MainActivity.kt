@@ -1,4 +1,4 @@
-package com.example.test_ephrem
+package com.example.seequl
 
 import io.flutter.embedding.android.FlutterActivity
 

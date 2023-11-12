@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:test_ephrem/config/path.dart';
-import 'package:test_ephrem/widgets/app_bar.dart';
-import 'package:test_ephrem/widgets/comment_box.dart';
-import 'package:test_ephrem/widgets/comment_widget.dart';
-import 'package:test_ephrem/widgets/emoji_keyboard.dart';
+import 'package:seequl/config/path.dart';
+import 'package:seequl/widgets/app_bar.dart';
+import 'package:seequl/widgets/comment_box.dart';
+import 'package:seequl/widgets/comment_widget.dart';
+import 'package:seequl/widgets/emoji_keyboard.dart';
 
 import '../models/comment.dart';
 

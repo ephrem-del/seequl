@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:test_ephrem/models/comment.dart';
+import 'package:seequl/models/comment.dart';
 
 import 'comment_box.dart';
 import 'comment_widget.dart';

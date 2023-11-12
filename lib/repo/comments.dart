@@ -1,4 +1,4 @@
-import 'package:test_ephrem/config/path.dart';
+import 'package:seequl/config/path.dart';
 
 import '../models/comment.dart';
 
